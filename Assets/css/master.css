@@ -81,6 +81,17 @@ article h2 {
     text-align: center;
     color: #ddd;
 }
+article h3 {
+    text-align: center;
+    font-size: x-large;
+    color: #ddd;
+}
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2.5%;
+}
 
 article p {
     text-align: center;
