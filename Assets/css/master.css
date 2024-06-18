@@ -73,6 +73,10 @@ article.full-page-article {
     min-height: calc(75vh - 78px);
 }
 
+article h1 {
+    text-align: center;
+    color: #ddd;
+}
 article h2 {
     text-align: center;
     color: #ddd;
