@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/Assets/css/master.css">
+    <link rel="stylesheet" href="/Assets/css/screens.css">
     <title>Screenshots</title>
 </head>
 <body>
@@ -16,34 +16,18 @@
       <a href="/Pages/violon.html">Violon</a>
       <a href="/Pages/screenshots.html">Screenshots</a>
     </nav>
-    <nav>
-      <a href="/Pages/Screens/elitedangerous.html">Elite Dangerous</a>
-      <a href="/Pages/Screens/genshinimpact.html">Genshin Impact</a>
-    </nav>
     <article>
       <h2>Quelques petits screenshots ?</h2>
-      <div class="boites">
-        <a href="/Pages/Screens/elitedangerous.html">
-          <div class="boite">
-              <div class="face face1">
-                <figure>
-                  <figcaption><h1>Elite Dangerous</h1></figcaption>
-                  <img src="/Assets/img/Elite Dangerous/Elite Dangerous Banner.jpeg" width="384" height="216">
-                </figure>
-              </div>
-          </div>
-        </a>
-          <div class="boite">
-            <a href="/Pages/Screens/genshinimpact.html">
-                <div class="face face1">
-                  <figure>
-                    <figcaption><h1>Genshin Impact</h1></figcaption>
-                    <img src="/Assets/img/Genshin Impact/Genshin Impact Banner.jpg" width="384" height="216">
-                  </figure>
-                </div>
-            </a>
-          </div>
+      <div class="img-container">
+        <div class="lightbox" id="lightbox">
+          <span class="close" onclick="closeLightbox()">×</span>
+          <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+          <img id="lightbox-img" src="" alt="Grande Image">
+          <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+  
+        <script src="/Assets/scripts/gallery.js"></script>
       </div>
-  </article>
+    </article>
   </body>
 </html>
